@@ -1,18 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TeduShop.Data.Infrastructure;
 using TeduShop.Data.Repositories;
 using TeduShop.Model.Models;
+using System.Linq;
 
 namespace TeduShop.Service
 {
-    public interface IPostService {
+    public interface IPostService
+    {
         void Add(Post post);
+
         void Update(Post post);
+
         void Delete(int id);
+
         IEnumerable<Post> GetAll();
 
         IEnumerable<Post> GetAllPaging(int page, int pageSize, out int totalRow);
@@ -25,15 +27,18 @@ namespace TeduShop.Service
 
         void SaveChanges();
     }
+
     public class PostService : IPostService
     {
         IPostRepository _postRepository;
         IUnitOfWork _unitOfWork;
+
         public PostService(IPostRepository postRepository, IUnitOfWork unitOfWork)
         {
             this._postRepository = postRepository;
             this._unitOfWork = unitOfWork;
         }
+
         public void Add(Post post)
         {
             _postRepository.Add(post);

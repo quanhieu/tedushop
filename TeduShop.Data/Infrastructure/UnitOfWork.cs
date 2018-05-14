@@ -21,7 +21,6 @@ namespace TeduShop.Data.Infrastructure
             get { return dbContext ?? (dbContext = dbFactory.Init()); }
         }
 
-        // 2 phuong thuc Commit mot cai thi se day vao database
         public void Commit()
         {
             DbContext.SaveChanges();

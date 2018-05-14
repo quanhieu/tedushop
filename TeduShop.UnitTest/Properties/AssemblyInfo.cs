@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TeduShop.Service")]
+[assembly: AssemblyTitle("TeduShop.UnitTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TeduShop.Service")]
+[assembly: AssemblyProduct("TeduShop.UnitTest")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7eb49ce5-4c7a-46d0-b381-eb19a5f8dfaa")]
+[assembly: Guid("2e7049c4-3ea9-4abc-88ea-e63fc64814d7")]
 
 // Version information for an assembly consists of the following four values:
 //

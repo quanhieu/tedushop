@@ -10,7 +10,7 @@ namespace TeduShop.Data
 {
     public class TeduShopDbContext : DbContext
     {
-        public TeduShopDbContext() : base("")
+        public TeduShopDbContext() : base("TeduShopConnection")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }
@@ -36,9 +36,10 @@ namespace TeduShop.Data
 
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
 
+
         protected override void OnModelCreating(DbModelBuilder builder)
         {
-            //base.OnModelCreating(builder);
+
         }
     }
 }

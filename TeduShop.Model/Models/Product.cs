@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 using TeduShop.Model.Abstract;
 
@@ -37,7 +32,6 @@ namespace TeduShop.Model.Models
         public decimal Price { set; get; }
 
         public decimal? PromotionPrice { set; get; }
-
         public int? Warranty { set; get; }
 
         [MaxLength(500)]
@@ -48,15 +42,7 @@ namespace TeduShop.Model.Models
         public bool? HotFlag { set; get; }
         public int? ViewCount { set; get; }
 
-        public string Tags { set; get; }
-
-        public int Quantity { set; get; }
-
-        public decimal OriginalPrice { set; get; }
-
         [ForeignKey("CategoryID")]
         public virtual ProductCategory ProductCategory { set; get; }
-
-        public virtual IEnumerable<ProductTag> ProductTags { set; get; }
     }
 }

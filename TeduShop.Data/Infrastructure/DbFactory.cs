@@ -1,6 +1,5 @@
 ﻿namespace TeduShop.Data.Infrastructure
 {
-    // DbFactory de khoi tao doi tuong DbContext thay vi build truoc tiep thi se thongg qua doi tuong Factory nay
     public class DbFactory : Disposable, IDbFactory
     {
         private TeduShopDbContext dbContext;

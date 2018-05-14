@@ -2,7 +2,7 @@
 
 namespace TeduShop.Model.Abstract
 {
-    internal interface IAuditable
+    public interface IAuditable
     {
         DateTime? CreatedDate { set; get; }
         string CreatedBy { set; get; }

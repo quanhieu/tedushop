@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace TeduShop.Data.Infrastructure
 {
-    // Disposable ke thua tu IDisposable co san, va no co the tu dong tat doi tuong khi khong dung den
     public class Disposable : IDisposable
     {
         private bool isDisposed;
